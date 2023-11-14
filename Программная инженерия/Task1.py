@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from tensorflow import keras
 from io import BytesIO
 from PIL import Image
+
 model = keras.applications.VGG16()
 img = Image.open('test_image.jpg')
 plt.imshow( img )
