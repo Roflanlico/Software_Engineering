@@ -25,7 +25,7 @@ def preprocess_image(img):
     img = img.resize((224, 224))
     #x = img_to_array(img)
     x= np.asarray(img.load())
-    x = keras.applications.vgg16.preprocess_input(img)
+    x = keras.applications.vgg16.preprocess_input(x)
     x = np.expand_dims(x, axis=0)
     return x
 
