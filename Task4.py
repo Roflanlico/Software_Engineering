@@ -38,5 +38,5 @@ if result:
     x = preprocess_image(img)
     res = model.predict(x)
     st.write('**Номер результирующего класса:**')
-    print(np.argmax(res))
-    print("Hello world")
+    st.write(np.argmax(res))
+    #print("Hello world")
