@@ -5,6 +5,7 @@ from io import BytesIO
 from PIL import Image
 import io
 import streamlit as st 
+from tensorflow.keras.utils import img_to_array
 
 def load_image():
     uploaded_file = st.file_uploader( label='Выберите изображение для распознавания')
@@ -22,7 +23,7 @@ def load_model():
 
 def preprocess_image(img):
     img = img.resize((224, 224))
-    x = Image.img_to_array(img, data_format = NULL)
+    x = img_to_array(img)
     x = keras.applications.vgg16.preprocess_input(img)
     x = np.expand_dims(x, axis=0)
     return x
