@@ -39,3 +39,4 @@ if result:
     res = model.predict(x)
     st.write('**Номер результирующего класса:**')
     print(np.argmax(res))
+    print("Hello world")
