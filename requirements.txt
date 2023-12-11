@@ -5,3 +5,4 @@ streamlit
 Pillow
 fastapi
 pydantic
+httpx
