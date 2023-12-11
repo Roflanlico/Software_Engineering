@@ -13,7 +13,6 @@ def test_read_predict_volcano():
     json_data = response.json()
     assert response.status_code == 200
     assert json_data == 980
-
     
 def test_read_predict_ocean():
     response = client.post("/predict/", json={"text": "ocean"} )
