@@ -1,10 +1,11 @@
-﻿import numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow import keras
 from io import BytesIO
 from PIL import Image
 import io
 import streamlit as st 
+from tensorflow.keras.utils import img_to_array
 
 def load_image():
     uploaded_file = st.file_uploader( label='Выберите изображение для распознавания')
@@ -22,8 +23,9 @@ def load_model():
 
 def preprocess_image(img):
     img = img.resize((224, 224))
-    x = image.img_to_array(img)
-    x = keras.applications.vgg16.preprocess_input(img)
+    #x = img_to_array(img)
+    x= np.array(img)
+    x = keras.applications.vgg16.preprocess_input(x)
     x = np.expand_dims(x, axis=0)
     return x
 
@@ -36,4 +38,7 @@ if result:
     x = preprocess_image(img)
     res = model.predict(x)
     st.write('**Номер результирующего класса:**')
-    print(np.argmax(res))
+    st.write(np.argmax(res))
+    #print("Hello world")
+
+
