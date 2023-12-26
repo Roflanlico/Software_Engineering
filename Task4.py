@@ -1,4 +1,4 @@
-import numpy as np
+﻿import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow import keras
 from io import BytesIO
@@ -40,5 +40,3 @@ if result:
     st.write('**Номер результирующего класса:**')
     st.write(np.argmax(res))
     #print("Hello world")
-
-

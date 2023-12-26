@@ -1,0 +1,8 @@
+numpy
+matplotlib
+tensorflow
+streamlit
+Pillow
+fastapi
+pydantic
+httpx
