@@ -6,6 +6,7 @@ from PIL import Image
 import io
 import streamlit as st 
 from tensorflow.keras.utils import img_to_array
+import classes
 
 def load_image():
     uploaded_file = st.file_uploader( label='Выберите изображение для распознавания')
@@ -37,6 +38,6 @@ result = st.button('Распознать изображение')
 if result:
     x = preprocess_image(img)
     res = model.predict(x)
-    st.write('**Номер результирующего класса:**')
-    st.write(np.argmax(res))
+    st.write('**Изображение распознано, как:**')
+    st.write(classes.classes[np.argmax(res)])
     #print("Hello world")
