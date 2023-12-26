@@ -4,8 +4,8 @@
 
 
 # Работа приложения
-Так выкглядит наше приложение на StreamliteCloud ![image](https://github.com/MarkShubat/Software_Engineering/assets/92446877/906ce781-4cac-4e6e-9b9a-318828e91a89). Пользователь может выбрать файл изображения, которое ему хотелось бы классифицировать.
-Так выглядит приложение с выбранным изображением ![image](https://github.com/MarkShubat/Software_Engineering/assets/92446877/dd031cdd-e7d5-4950-bbbc-7d4c9d39634b). После этого появляется возможность нажать кнопку "Распознать изображение". 
+Так выкглядит наше приложение на StreamliteCloud ![image](https://github.com/MarkShubat/Software_Engineering/assets/92446877/906ce781-4cac-4e6e-9b9a-318828e91a89) Пользователь может выбрать файл изображения, которое ему хотелось бы классифицировать.
+Так выглядит приложение с выбранным изображением ![image](https://github.com/MarkShubat/Software_Engineering/assets/92446877/dd031cdd-e7d5-4950-bbbc-7d4c9d39634b) После этого появляется возможность нажать кнопку "Распознать изображение". 
 Далее программа классифицирует изображение и возвращает название соответствующего изображению класса, показывая его пользователю. ![image](https://github.com/MarkShubat/Software_Engineering/assets/92446877/7b5dc37e-baa4-41e0-bcd0-ac152acf1a9a)
 
 
